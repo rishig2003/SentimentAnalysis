@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
+
 def remove_non_ascii(input_string):
     return ''.join(char if ord(char) < 128 else '' for char in input_string)
 
